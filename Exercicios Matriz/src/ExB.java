@@ -10,7 +10,7 @@ public class ExB {
 		
 		for(i = 0; i < 3; i++) {
 			for(j = 0; j < 3; j++) {
-				m[i] [j] = random.nextInt();
+				m[i] [j] = random.nextInt(10);
 			}
 		}
 		
@@ -36,7 +36,7 @@ public class ExB {
 					maior = m[i] [j];
 					linha = i;
 					coluna = j;
-				}else {
+				}else if (m [i][j] < menor){
 					menor = m[i] [j];
 					linham = i;
 					colunam = j;
